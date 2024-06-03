@@ -11,8 +11,8 @@
         <h1>Diabetes Guidelines</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="/auth/register.php">Register</a>
-            <a href="/auth/login.php">Login</a>
+            <a href="register.php">Register</a>
+            <a href="login.php">Login</a>
         </nav>
     </header>
     <main>
