@@ -13,6 +13,8 @@
             <a href="index.php">Home</a>
             <a href="register.php">Register</a>
             <a href="login.php">Login</a>
+            <a href="conntact.php">Conntact</a>
+            <a href="facts.php">Explenation</a>
         </nav>
     </header>
     <main>
