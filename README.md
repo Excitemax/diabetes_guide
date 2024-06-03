@@ -2,5 +2,5 @@ Ini adalah website yang membahas penyakit yang sering menyererang tubuh manusia 
 
 
 1. Ezekiel Griffin Dave-42230011
-2. Wilson da Costa
-3. Jerry Liong
+2. Willybrodus Stephanus Da Costa-42230015
+3. Jerry Liong-42230026
