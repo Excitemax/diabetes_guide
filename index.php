@@ -11,10 +11,13 @@
         <h1>Diabetes Guidelines</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="register.php">Register</a>
-            <a href="login.php">Login</a>
-            <a href="conntact.php">Conntact</a>
-            <a href="facts.php">Explenation</a>
+<<<<<<< HEAD
+            <a href="account/register.php">Register</a>
+            <a href="account/login.php">Login</a>
+            <a href="conntact.php">Contact</a>
+            <a href="facts.php">Explanation</a>
+=======
+>>>>>>> 67fde56c8be6518a1b7039aa3f3e51154168d0bc
         </nav>
     </header>
     <main>
