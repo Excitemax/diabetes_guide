@@ -23,7 +23,9 @@
                 Glukosa merupakan sumber energi utama bagi sel tubuh manusia. 
                 Akan tetapi, pada penderita diabetes, glukosa tersebut tidak dapat digunakan oleh tubuh.
             </p>
+        </section>
 
+        <section>
             <h2>Jenis Diabetes</h2>
 
             <p>Diabetes pada umumnya dibagi menjadi dua jenis:</p>
@@ -43,7 +45,22 @@
             Kondisi ini dikenal juga dengan istilah resistensi insulin.
             </p>
 
-            
+        </section>
+
+        <section>
+            <h2>Gejala Diabetes</h2>
+
+            <ul>
+                <li>Sering merasa haus atau sangat lapar</li>
+                <li>Sering buang air kecil, terutama pada malam hari</li>
+                <li>Penurunan berat badan tanpa sebab yang jelas</li>
+                <li>Penurunan massa otot</li>
+                <li>Pandangan kabur</li>
+                <li>Urine mengandung keton</li>
+                <li>Luka menjadi lebih sulit sembuh</li>
+                <li>Mudah mengalami infeksi, seperti di gusi, kulit, vagina, atau saluran kemih
+</li>
+            </ul>            
         </section>
         <section>
             <h2>Healthy Living Tips</h2>
