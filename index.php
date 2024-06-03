@@ -65,6 +65,7 @@
         <section>
             <h2>Healthy Living Tips</h2>
             <!--ingat isi-->
+            <p>Berikut adalah beberapa tips hidup sehat untuk menghindari diabetes:</p>
             <ul>
                 <li>Mengatur frekuensi dan menu makanan menjadi lebih sehat</li>
                 <li>Rutin berolahraga dan melakukan aktivitas fisik</li>
