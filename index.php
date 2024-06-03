@@ -16,6 +16,7 @@
             <a href="account/login.php">Login</a>
             <a href="contact.php">Contact</a>
             <a href="facts.php">Facts</a>
+            <a href="news.php">News</a>
         </nav>
     </header>
     <main>

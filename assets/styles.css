@@ -39,3 +39,39 @@ ul {
 .error {
     color: red;
 }
+
+/* Tautan navigasi aktif */
+nav a.active {
+    font-weight: bold;
+}
+
+/* Efek hover pada tautan navigasi */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Gaya untuk artikel */
+.article {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.article h3 {
+    margin-top: 0;
+}
+
+.article p {
+    margin-bottom: 10px;
+}
+
+.article a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
