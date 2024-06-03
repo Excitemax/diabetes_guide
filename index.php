@@ -14,7 +14,7 @@
 <<<<<<< HEAD
             <a href="account/register.php">Register</a>
             <a href="account/login.php">Login</a>
-            <a href="conntact.php">Contact</a>
+            <a href="contact.php">Contact</a>
             <a href="facts.php">Explanation</a>
 =======
 >>>>>>> 67fde56c8be6518a1b7039aa3f3e51154168d0bc
