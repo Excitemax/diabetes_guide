@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register - Website Kesehatan</title>
+    <title>Register - Diabetes_guide</title>
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
