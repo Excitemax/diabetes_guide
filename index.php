@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=H"></meta>
-    <title>Diabetes Guidelines</title>
+    <title>Facts</title>
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
