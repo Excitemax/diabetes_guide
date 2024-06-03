@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 
-<>
+
     <header>
         <h1>Diabetes News</h1>
         
