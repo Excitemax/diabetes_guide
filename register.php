@@ -1,77 +1,57 @@
-<?php include '../db.php'; ?>
+<?php include 'C:/xampp/htdocs/diabetes_guide/db.php'; ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="assets/style2.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
     <header>
         <h1>Diabetes Guidelines</h1>
+        <nav>
+            <a href="index.php">Home</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Register</h2>
-            <form id="registerForm" method="POST" action="register.php" onsubmit="return validateForm()">
-                <label for="username">Username:</labe><br>
-                <input type="text" id="username" name="username" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required><br>
-                <label for="confirmPassword">Confirm Password:</label><br>
-                <input type="password" id="confirmPassword" name="confirmPassword" required><br>
-                <input type="submit" name="submit" value="Register">
-                <div id="registerErrors" class="error"></div>
-            </form>
-        </section>
-    </main>
-    <script>
-        function validateForm() {
-            const password = document.getElementById('password').value;
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            const errors = document.getElementById('registerErrors');
+        <h2>Register</h2>
+        <form id="registerForm" method="POST" action="register.php">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+            <input type="submit" name="submit" value="Register">
+            <div id="registerErrors" class="error"></div>
+        </form>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $username = $conn->real_escape_string($_POST["username"]);
+            $email = $conn->real_escape_string($_POST["email"]);
+            $password = $_POST["password"];
+            $confirmPassword = $_POST["confirmPassword"];
 
-            if (password.length < 6) {
-                errors.textContent = 'Password must be at least 6 characters long.';
-                return false;
-            }
-
-            if (password !== confirmPassword) {
-                errors.textContent = 'Passwords do not match.';
-                return false;
-            }
-
-            return true;
-        }
-    </script>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $username = $_POST["username"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        $confirmPassword = $_POST["confirmPassword"];
-
-        // Server-side validation
-        if (strlen($password) < 6) {
-            echo "Password must be at least 6 characters long.";
-        } elseif ($password !== $confirmPassword) {
-            echo "Passwords do not match.";
-        } else {
-            $passwordHash = password_hash($password, PASSWORD_BCRYPT);
-
-            // Assuming you have already created a connection to the database as $conn
-            $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$passwordHash')";
-            if ($conn->query($sql) === TRUE) {
-                echo "New user registered successfully";
+            // Validasi Password
+            if ($password !== $confirmPassword) {
+                echo "<div class='error'>Passwords do not match.</div>";
+                
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+                $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
+                if ($conn->query($sql) === TRUE) {
+                    echo "<div class='success'>New user registered successfully</div>";
+                    echo "<a href='login.php'>Login sekarang</a>";
+                } else {
+                    echo "<div class='error'>Error: " . $sql . "<br>" . $conn->error . "</div>";
+                }
             }
         }
-    }
-    ?>
-</main>
-    <script src="script.js"></script>
+        ?>
+    </main>
+    <script src="../script.js"></script>
 </body>
 </html>
