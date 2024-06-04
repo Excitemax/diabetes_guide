@@ -29,7 +29,8 @@ session_start();
         <?php
             if (isset($_SESSION['username'])) {
                 echo '<span>Welcome, ' . $_SESSION['username'] . '!</span>';
-                echo '<a href="logout.php">Logout</a>';
+                echo '<a href="logout.php" id="logout-button">Logout</a>';
+                
             }
         ?>
         <section>
