@@ -64,5 +64,6 @@ Gaya hidup sehat, pemantauan glukosa darah, dan akses ke perawatan yang tepat me
 
 
 </main>
+<script src="script.js"></script>
 </body>
 </html>
