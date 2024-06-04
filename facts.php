@@ -24,10 +24,11 @@
     <div class="facts">
      <section>
         <h2>1. Bukan Hanya Terjadi pada Orang Tua<h2>
-        <br>
         <p>Salah satu anggapan yang umum adalah bahwa diabetes hanya terjadi pada orang tua atau mereka yang berusia lanjut. Namun, kenyataannya, penyakit ini dapat terjadi pada siapa pun, termasuk anak-anak dan remaja.<p>
+    </section>
+
+    <section>
         <h2>2. Diabetes Tipe 1 Bukan Disebabkan oleh Pola Makan atau Gaya Hidup<h2>
-        <br>
         <p>Salah satu fakta yang sering kali kurang dipahami adalah bahwa diabetes tipe 1 bukanlah hasil dari pola makan atau gaya hidup yang tidak sehat.
 
 Diabetes tipe 1 terjadi ketika sistem kekebalan tubuh secara keliru menyerang dan menghancurkan sel-sel pankreas yang memproduksi insulin.
