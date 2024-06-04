@@ -170,3 +170,49 @@ section {
     margin-bottom: 15px;
     border: 1px solid #dddddd;
 }
+
+/* Gaya dasar untuk semua perangkat */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex; /* Pusatkan konten secara vertikal di semua layar */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Pastikan konten mengisi viewport */
+  }
+  
+  .login-container, .welcome-container, .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk layar kecil (mobile) */
+  @media (max-width: 768px) {
+    .login-container, .welcome-container, .container {
+      width: 90%; /* Sesuaikan lebar container untuk pengalaman mobile yang lebih baik */
+      margin-top: 0; /* Hapus margin atas di mobile */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Sesuaikan ukuran heading untuk layar kecil */
+    }
+  
+    label, input, button {
+      font-size: 0.9rem; /* Sesuaikan ukuran font untuk keterbacaan yang lebih baik */
+    }
+  }
+  
+  /* Gaya untuk layar besar (desktop) */
+  @media (min-width: 768px) {
+    .login-container, .welcome-container, .container {
+      width: 300px; /* Pertahankan lebar yang diinginkan di desktop */
+    }
+  }
+  

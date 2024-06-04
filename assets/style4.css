@@ -73,3 +73,78 @@ section {
     text-align: center;
     color: #f4f4f4;
 }
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 768px) { /* Desktops and larger screens */
+    header {
+      padding: 20px 0;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px; /* Adjust padding for larger screens */
+    }
+  
+    nav a {
+      margin: 0 20px; /* Adjust spacing for larger screens */
+    }
+  
+    section {
+      display: flex; /* Arrange sections side-by-side on desktops */
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  
+    .form {
+      width: 400px; /* Adjust form width for desktops */
+      position: relative; /* Remove absolute positioning for better layout */
+      top: auto;
+      left: auto;
+      margin: 20px auto; /* Center form on desktops */
+      border-radius: 10px;
+      padding: 30px;
+    }
+  
+    .form h2 {
+      width: 100%; /* Fit heading to form width */
+    }
+  }
+  
+  @media (max-width: 767px) { /* Tablets and smaller screens */
+    header {
+      padding: 15px 10px; /* Adjust padding for smaller screens */
+    }
+  
+    nav {
+      display: flex; /* Allow stacking navigation links */
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin: 10px 0; /* Adjust spacing for smaller screens */
+    }
+  
+    section {
+      display: block; /* Stack sections vertically */
+      margin-bottom: 15px;
+    }
+  
+    .form {
+      width: 80%; /* Adjust form width for smaller screens */
+      margin: 10px auto; /* Center form on smaller screens */
+    }
+  }
+  

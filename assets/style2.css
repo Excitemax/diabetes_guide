@@ -67,3 +67,87 @@ main {
     color: #333;
 }
 
+/* Gaya dasar untuk semua perangkat */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    color: #35424a;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .bold {
+    font-weight: 900;
+    color: #35424a;
+  }
+  
+  #nutrition-info {
+    margin-top: 20px;
+  }
+  
+  /* Gaya responsif untuk layar kecil (mobile) */
+  @media (max-width: 768px) {
+    header {
+      padding: 15px; /* Tambah padding untuk layar kecil */
+    }
+  
+    nav {
+      text-align: center; /* Pindahkan navigasi ke tengah */
+    }
+  
+    nav a {
+      display: block; /* Tampilkan tautan navigasi secara vertikal */
+      margin: 10px auto; /* Pusatkan setiap tautan secara horizontal */
+    }
+  
+    main {
+      padding: 10px; /* Kurangi padding untuk layar kecil */
+    }
+  
+    section,
+    .nutrition-item {
+      width: 100%; /* Penuhi lebar layar untuk elemen section dan nutrition-item */
+    }
+  }
+  
+  /* Gaya responsif untuk layar besar (desktop) */
+  @media (min-width: 768px) {
+    /* Anda dapat menambahkan gaya khusus desktop di sini, 
+       tetapi sebagian besar gaya dasar sudah sesuai */
+  }
+  
+
