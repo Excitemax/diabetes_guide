@@ -39,11 +39,16 @@ if (isset($_POST['food'])) {
         </nav>
     </header>
     <main>
-        <h2>Search Food Nutrition</h2>
-        <form method="post" action="nutrition.php">
-            <input type="text" name="food" placeholder="Enter food name" required>
-            <button type="submit">Search</button>
-        </form>
+        <h2>Ingin tahu kandungan nutrisi dari makanan yang anda konsumsi?</h2>
+
+        <section>
+            <h2>Search Food Nutrition</h2>
+            <form method="post" action="nutrition.php">
+                <input type="text" name="food" placeholder="Enter food name" required>
+                <button type="submit">Search</button>
+                <p>Mohon masukkan nama makanan dalam bahasa inggris</p>
+            </form>
+        </section>
         <div id="nutrition-info">
             <?php if (isset($data['foods'])): ?>
                 <?php foreach ($data['foods'] as $food): ?>
