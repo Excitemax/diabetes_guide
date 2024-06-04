@@ -18,6 +18,7 @@
             <a href="contact.php">Contact</a>
             <a href="facts.php">Facts</a>
             <a href="news.php">News</a>
+            <a href="akun.php">Akun</a>
         </nav>
     </header>
     <main>
