@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    align-items: center;
 }
 
 header {
@@ -12,21 +13,28 @@ header {
     text-align: center;
 }
 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+}
+
 header h1 {
     margin: 0;
     padding: 0;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    margin: 0 10px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 main {
     padding: 20px;
@@ -51,3 +59,4 @@ main {
     padding: 0;
     color: #333;
 }
+
