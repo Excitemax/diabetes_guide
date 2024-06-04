@@ -44,7 +44,7 @@
                 $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
                 if ($conn->query($sql) === TRUE) {
                     echo "<div class='success'>New user registered successfully</div>";
-                    echo "<a href='login.php'>Login sekarang</a>";
+                    echo "<a href='akun.php'>Login sekarang</a>";
                 } else {
                     echo "<div class='error'>Error: " . $sql . "<br>" . $conn->error . "</div>";
                 }
