@@ -19,7 +19,8 @@
             <a href="news.php">News</a>
         </nav>
     </header>
-    <main>
+  <main>
+    <section>
     <h2>Hubungi Kami (Contact Us)</h2>
 
     <p>We appreciate your interest in contacting us. Here are some ways to reach us:</p>
@@ -56,6 +57,7 @@
       </ul>
 
     <p>Remember, this website is not intended to provide medical advice. If you have any concerns about your health, please consult a qualified healthcare professional.</p>
+    </section>
   </main>
 
 </body>
