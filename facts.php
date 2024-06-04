@@ -50,7 +50,7 @@ Namun, hal ini tidak berarti bahwa diabetes adalah nasib yang tak terhindarkan. 
         <p>Meskipun diabetes tergolong penyakit kronis, banyak kasus diabetes tipe 2 yang dapat dicegah dengan perubahan gaya hidup yang sehat. Mengadopsi pola makan seimbang, rutin berolahraga, menjaga berat badan yang sehat, dan menghindari kebiasaan merokok dan konsumsi alkohol berlebihan dapat mengurangi risikonya.<p>
       </section>
 
-      section>
+      <section>
         <h2>6. Diabetes Dapat Sebabkan Beberapa Komplikasi<h2>
         <p>Kecuali untuk untuk diabetes gestasional, diabetes termasuk penyakit kronis yang yang membutuhkan perawatan intensif, karena susah untuk bisa sembuh total. Efeknya bisa mempengaruhi hampir seluruh bagian tubuh. Selain itu, juga bisa menyebabkan penyakit serius lainnya, bahkan bisa mengancam jiwa. 
 
