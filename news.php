@@ -25,7 +25,7 @@
         <div id="articles"></div>
     </section>
     <script>
-        // Ganti dengan kunci API Anda
+        
         const apiKey = '9f791c44dae3433690028095ded3bf4f';
         const apiUrl = `https://newsapi.org/v2/everything?q=diabetes&apiKey=${apiKey}&pageSize=5`;
 
