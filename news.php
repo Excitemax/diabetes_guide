@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News</title>
+    <title>Diabetes News</title>
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
-
-
+<body>
     <header>
         <h1>Diabetes News</h1>
-        
         <nav>
             <a href="index.php">Home</a>
             <a href="account/register.php">Register</a>
@@ -21,31 +19,53 @@
             <a href="news.php">News</a>
         </nav>
     </header>
-    <section>
-        <div id="articles"></div>
-    </section>
+    <main>
+        <section>
+            <label for="sortOptions">Sort by: </label>
+            <select id="sortOptions">
+                <option value="publishedAt">Published Date</option>
+                <option value="relevancy">Relevancy</option>
+                <option value="popularity">Popularity</option>
+            </select>
+            <div id="articles"></div>
+        </section>
+    </main>
     <script>
-        
         const apiKey = '9f791c44dae3433690028095ded3bf4f';
-        const apiUrl = `https://newsapi.org/v2/everything?q=diabetes&apiKey=${apiKey}&pageSize=5`;
+        const articlesContainer = document.getElementById('articles');
+        const sortOptions = document.getElementById('sortOptions');
 
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                const articlesContainer = document.getElementById('articles');
-                data.articles.forEach(article => {
-                    const articleElement = document.createElement('div');
-                    articleElement.classList.add('article');
-                    articleElement.innerHTML = `
-                        <h3>${article.title}</h3>
-                        <p>${article.description}</p>
-                        <a href="${article.url}" target="_blank">Read more</a>
-                        <hr>
-                    `;
-                    articlesContainer.appendChild(articleElement);
+        function fetchArticles(sortBy) {
+            const apiUrl = `https://newsapi.org/v2/everything?q=diabetes&apiKey=${apiKey}&pageSize=5&sortBy=${sortBy}`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    articlesContainer.innerHTML = ''; // Clear existing content
+                    data.articles.forEach(article => {
+                        const articleElement = document.createElement('div');
+                        articleElement.classList.add('article');
+                        articleElement.innerHTML = `
+                            <h3>${article.title}</h3>
+                            <p>${article.description}</p>
+                            <a href="${article.url}" target="_blank">Read more</a>
+                            <hr>
+                        `;
+                        articlesContainer.appendChild(articleElement);
+                    });
+                })
+                .catch(error => {
+                    articlesContainer.innerHTML = '<p>Failed to load news articles. Please try again later.</p>';
+                    console.error('Error fetching data:', error);
                 });
-            })
-            .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Initial fetch with default sortBy parameter
+        fetchArticles(sortOptions.value);
+
+        // Fetch articles on sort option change
+        sortOptions.addEventListener('change', (event) => {
+            fetchArticles(event.target.value);
+        });
     </script>
 </body>
 </html>
