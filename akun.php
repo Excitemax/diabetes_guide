@@ -1,4 +1,7 @@
-<?php include 'db.php'; ?>
+<?php
+include 'db.php';
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +31,7 @@
                 <input type="submit" class="btn" value="Login">
             </form>
             <p class="link">Tidak punya akun<br>
-                <a href="register.php">Daftar di sini</a>
+                <a href="account/register.php">Daftar di sini</a>
             </p>
             <div id="loginErrors" class="error">
                 <?php
@@ -42,12 +45,10 @@
                     if ($result->num_rows > 0) {
                         $row = $result->fetch_assoc();
                         if (password_verify($password, $row["password"])) {
-                            echo "<div class='success'>Login successful</div>";
-                            // Set session variables or redirect to another page
-                            // session_start();
-                            // $_SESSION['user_id'] = $row['id'];
-                            // header("Location: index.php");
-                            // exit();
+                            $_SESSION['user_id'] = $row['id'];
+                            $_SESSION['username'] = $row['username'];
+                            header("Location: index.php");
+                            exit();
                         } else {
                             echo "<div class='error'>Incorrect password</div>";
                         }

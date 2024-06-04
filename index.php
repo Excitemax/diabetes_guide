@@ -1,3 +1,8 @@
+<?php
+include 'db.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,9 +22,16 @@
             <a href="facts.php">Facts</a>
             <a href="news.php">News</a>
             <a href="akun.php">Akun</a>
+            
         </nav>
     </header>
     <main>
+        <?php
+            if (isset($_SESSION['username'])) {
+                echo '<span>Welcome, ' . $_SESSION['username'] . '!</span>';
+                echo '<a href="logout.php">Logout</a>';
+            }
+        ?>
         <section>
             <h2>About Diabetes</h2>
             <!--Isi deskripsi-->
