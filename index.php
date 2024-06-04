@@ -62,8 +62,7 @@
                 <li>Pandangan kabur</li>
                 <li>Urine mengandung keton</li>
                 <li>Luka menjadi lebih sulit sembuh</li>
-                <li>Mudah mengalami infeksi, seperti di gusi, kulit, vagina, atau saluran kemih
-</li>
+                <li>Mudah mengalami infeksi, seperti di gusi, kulit, vagina, atau saluran kemih</li>
             </ul>            
         </section>
         <section>

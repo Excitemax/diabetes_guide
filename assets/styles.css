@@ -75,3 +75,35 @@ nav a:hover {
 .article a:hover {
     text-decoration: underline;
 }
+.facts {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.facts header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.facts nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.facts main {
+    padding: 20px;
+}
+
+.facts section {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+}
