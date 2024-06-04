@@ -11,12 +11,11 @@
         <h1>Diabetes News</h1>
         <nav>
             <a href="index.php">Home</a>
-            <a href="account/register.php">Register</a>
-            <a href="account/login.php">Login</a>
             <a href="nutrition.php">Nutrition</a>
             <a href="contact.php">Contact</a>
             <a href="facts.php">Facts</a>
             <a href="news.php">News</a>
+            <a href="akun.php">Akun</a>
         </nav>
     </header>
     <main>
