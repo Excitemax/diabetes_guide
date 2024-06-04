@@ -109,18 +109,19 @@ nav a:hover {
     border: 1px solid #dddddd;
 }
 
- #logout-button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 10px;
-        background-color: #f44336; /* Warna merah */
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-
- #logout-button:hover {
-        background-color: #d32f2f; /* Warna merah yang lebih gelap saat di-hover */
-    }
-
+#logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Tambahkan margin atas */
+    margin-bottom: 20px; /* Tambahkan margin bawah */
+    background-color: #5936f4; /* Warna merah */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    float: left; /* Menempatkan tombol di sebelah kiri */
+}
+    
+#logout-button:hover {
+    background-color: #5936f4; /* Warna merah yang lebih gelap saat di-hover */
+}
