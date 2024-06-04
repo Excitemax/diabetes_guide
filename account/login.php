@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style2.css">
 </head>
 <body>
     <header>
@@ -13,15 +13,17 @@
         </nav>
     </header>
     <main>
-        <h2>Login</h2>
-        <form id="loginForm" method="POST" action="login.php">
-            <label for="loginUsername">Username:</label><br>
-            <input type="text" id="loginUsername" name="username" required><br>
-            <label for="loginPassword">Password:</label><br>
-            <input type="password" id="loginPassword" name="password" required><br>
-            <input type="submit" name="submit" value="Login">
-            <div id="loginErrors" class="error"></div>
-        </form>
+        <section>
+            <h2>Login</h2>
+            <form id="loginForm" method="POST" action="login.php">
+                <label for="loginUsername">Username:</label><br>
+                <input type="text" id="loginUsername" name="username" required><br>
+                <label for="loginPassword">Password:</label><br>
+                <input type="password" id="loginPassword" name="password" required><br>
+                <input type="submit" name="submit" value="Login">
+                <div id="loginErrors" class="error"></div>
+            </form>
+        </section>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $username = $_POST["username"];

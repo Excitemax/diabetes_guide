@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style2.css">
 </head>
 <body>
     <header>
@@ -12,20 +12,23 @@
             <a href="../index.php">Home</a>
         </nav>
     </header>
-    <h2>Register</h2>
-    <form id="registerForm" method="POST" action="register.php" onsubmit="return validateForm()">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <label for="confirmPassword">Confirm Password:</label><br>
-        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
-        <input type="submit" name="submit" value="Register">
-        <div id="registerErrors" class="error"></div>
-    </form>
-
+    <main>
+        <section>
+            <h2>Register</h2>
+            <form id="registerForm" method="POST" action="register.php" onsubmit="return validateForm()">
+                <label for="username">Username:</labe><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+                <input type="submit" name="submit" value="Register">
+                <div id="registerErrors" class="error"></div>
+            </form>
+        </section>
+    </main>
     <script>
         function validateForm() {
             const password = document.getElementById('password').value;
