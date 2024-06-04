@@ -7,9 +7,8 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
- 
-    <header>
-        <h1>Fakta Seputar Diabetes yang Mesti Diketahui<h1>
+<header>
+        <h1>Fakta Tentang Diabetes</h1>
         <nav>
             <a href="index.php">Home</a>
             <a href="account/register.php">Register</a>
