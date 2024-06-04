@@ -39,9 +39,9 @@ if (isset($_POST['food'])) {
         </nav>
     </header>
     <main>
-        <h2>Ingin tahu kandungan nutrisi dari makanan yang anda konsumsi?</h2>
-
         <section>
+        <h2 id="bold">Ingin tahu kandungan nutrisi dari makanan yang anda konsumsi?</h2>
+
             <h2>Search Food Nutrition</h2>
             <form method="post" action="nutrition.php">
                 <input type="text" name="food" placeholder="Enter food name" required>
