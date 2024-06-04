@@ -28,6 +28,7 @@ section {
     padding: 15px;
     margin-bottom: 15px;
     border: 1px solid #dddddd;
+    color: #35424a;
 }
 
 header h1 {
@@ -39,6 +40,12 @@ header h1 {
 main {
     padding: 20px;
     text-align: center;
+}
+
+.bold {
+    font-weight: 900;
+    color: #35424a;
+    
 }
 
 #nutrition-info {
