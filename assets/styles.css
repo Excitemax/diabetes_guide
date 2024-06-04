@@ -126,3 +126,63 @@ nav a:hover {
 #logout-button:hover {
     background-color: #d32f2f; /* Warna merah yang lebih gelap saat di-hover */
 }
+
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Styles for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    header {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    nav {
+      text-align: center; /* Center navigation on mobile */
+    }
+  
+    nav a {
+      display: block; /* Stack navigation links vertically on mobile */
+      margin: 10px auto; /* Center each link horizontally */
+    }
+  
+    main {
+      padding: 10px; /* Reduce padding on mobile */
+    }
+  
+    section {
+      margin: 15px 0; /* Adjust margin for better spacing */
+    }
+  
+    .article, .facts {
+      border-radius: 0; /* Remove border radius for simpler design on mobile */
+    }
+  }
+  
+  /* Styles for larger screens (desktop) */
+  @media (min-width: 768px) {
+    /* You can add optional desktop-specific styles here,
+       but most styles from the base section will apply */
+  }
+  
