@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
-<header>
-        <h1>Mengenai Kami<h1>
+    <header>
+        <h1>Mengenai Kami</h1>
         <nav>
             <a href="index.php">Home</a>
             <a href="account/register.php">Register</a>

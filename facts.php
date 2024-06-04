@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
-<header>
+    <header>
         <h1>Fakta Tentang Diabetes</h1>
         <nav>
             <a href="index.php">Home</a>
