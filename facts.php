@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
- <main>
+ 
     <header>
         <h1>Fakta Seputar Diabetes yang Mesti Diketahui<h1>
         <nav>
@@ -20,6 +20,7 @@
             <a href="news.php">News</a>
         </nav>
     </header>
+    <main>
     <div class="facts">
      <section>
         <h2>1. Bukan Hanya Terjadi pada Orang Tua<h2>
@@ -32,8 +33,8 @@
 Diabetes tipe 1 terjadi ketika sistem kekebalan tubuh secara keliru menyerang dan menghancurkan sel-sel pankreas yang memproduksi insulin.
 
 Hal ini karena faktor genetik dan imunologi berperan dalam perkembangan penyakit ini, bukan semata-mata karena faktor perilaku atau pola makan.<p>
+   </div>
     </section>
-    </div>
 </main>
 </body>
 </html>
