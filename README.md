@@ -4,3 +4,7 @@ Ini adalah website yang membahas penyakit yang sering menyererang tubuh manusia 
 1. Ezekiel Griffin Dave-42230011
 2. Willybrodus Stephanus Da Costa-42230015
 3. Jerry Liong-42230026
+
+List API yang digunakan:
+-Nutritionix: https://www.nutritionix.com/business/api
+-Newsapi: https://newsapi.org/
