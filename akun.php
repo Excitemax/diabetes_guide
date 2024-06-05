@@ -31,7 +31,7 @@ session_start();
                 <input type="submit" class="btn" value="Login">
             </form>
             <p class="link">Tidak punya akun<br>
-                <a href="account/register.php">Daftar di sini</a>
+                <a href="register.php">Daftar di sini</a>
             </p>
             <div id="loginErrors" class="error">
                 <?php
