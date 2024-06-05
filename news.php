@@ -22,8 +22,8 @@
         <section>
             <label for="sortOptions">Sort by: </label>
             <select id="sortOptions">
-                <option value="publishedAt">Published Date</option>
                 <option value="relevancy">Relevancy</option>
+                <option value="publishedAt">Published Date</option>
                 <option value="popularity">Popularity</option>
             </select>
             <div id="articles"></div>
