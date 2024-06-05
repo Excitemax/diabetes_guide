@@ -35,7 +35,7 @@
         const sortOptions = document.getElementById('sortOptions');
 
         function fetchArticles(sortBy) {
-            const apiUrl = `https://newsapi.org/v2/everything?q=diabetes&apiKey=${apiKey}&pageSize=5&sortBy=${sortBy}`;
+            const apiUrl = `https://newsapi.org/v2/everything?q="diabetes"&language=en&apiKey=${apiKey}&pageSize=8&sortBy=${sortBy}`;
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
